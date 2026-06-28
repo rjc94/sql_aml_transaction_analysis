@@ -1,7 +1,7 @@
 --Check for NULL values
 SELECT
 COUNT (*) as blank_cust_record
-FROM `sql-master-492623.AML_Analysis.Raw_CSV` 
+FROM `AML_Analysis.AML_USD` 
 WHERE Sender_account IS NULL
   OR Receiver_account IS NULL
   OR Amount IS NULL
@@ -16,7 +16,7 @@ SELECT
   Receiver_account,
   Amount,
   COUNT(*) as instances
-FROM `sql-master-492623.AML_Analysis.Raw_CSV` 
+FROM `AML_Analysis.AML_USD` 
 GROUP BY
   Time,
   Date,
