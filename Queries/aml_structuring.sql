@@ -6,7 +6,7 @@ SELECT
     SUM(usd_received) as total_days_transfers_USD,
   -- MAX used to apply fraud flag for senders with multiple transactions, if any one of them is '1' for fraud flag, result is a 1. 
     MAX(Is_laundering) as actual_fraud_flag 
-FROM `sql-master-492623.AML_Analysis.AML_USD`
+FROM `AML_Analysis.AML_USD`
   -- Scans for transfers just under the Federal reporting limits
 WHERE usd_received >= 9000 AND usd_received < 10000 
 GROUP BY Date, Sender_account
