@@ -30,7 +30,12 @@ To mitigate this operational risk, I developed automation ready transaction moni
 
 ## Rapid Velocity Analysis
 * **SQL:** [Rapid Velocity Query](Queries/rapid_velocity_query.sql)
-* **Logic:** 
+* **Logic:** Flags accounts with 10 or more transactions daily as high-velocity accounts which should be monitored. Rapid transfers in succession could indicate fraudulent behavior.
+* **SQL:** [Rapid Velocity False Positives](Queries/rapid_velocity_false_positives.sql)
+* **Logic:** Determines the number of total accounts flagged vs. cases of confirmed fraud captured in these groups. Used to show the effectiveness of the query when using different trigger amounts for total daily transfers. 
+
+## Transaction Networks Analysis
+* **SQL:** 
 
 
 
