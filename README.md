@@ -22,6 +22,8 @@ To mitigate this operational risk, I developed automation ready transaction moni
 * **Data Sourcing:** I downloaded the raw transactional dataset from Kaggle to serve as the baseline simulation database.
 * **Data Preparation:** Unzipped .csv file, uploaded to Google Cloud folder, and loaded the dataset into BigQuery (SQL). File too large to load into BigQuery with standard upload, and would not load as a .zip, so used Google Cloud as a workaround. Formatted Schema to skip header row and saved table to query. 
 * **SQL:** [Data Cleaning and Validation Queries](Queries/data_cleaning_and_preparation.sql) - check for NULL values and duplicate entries in the dataset.
+* **Currency Conversion:** Amounts sent and received were listed under different currencies for this dataset. I ran this query in SQL to create a table with a new row for USD Received to ensure further queries could be compared with accuracy.
+* **SQL:** [Currency Conversion](Queries/convert_to_usd.sql)
 ***
 
 ## Structuring Analysis
@@ -35,7 +37,14 @@ To mitigate this operational risk, I developed automation ready transaction moni
 * **Logic:** Determines the number of total accounts flagged vs. cases of confirmed fraud captured in these groups. Used to show the effectiveness of the query when using different trigger amounts for total daily transfers. 
 
 ## Transaction Networks Analysis
-* **SQL:** 
+* **SQL:** [Transaction Networks Query](Queries/transactional_networks_query)
+* **Logic:** Flags accounts receiving deposits from 3 or more different sources in a day. Flags recipients for review as potential shell accounts.
+***
+
+## Dashboard View
+[Tableau Dashboard](https://public.tableau.com/views/AML_Analysis/TransactionNetworksDash?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+
 
 
 
