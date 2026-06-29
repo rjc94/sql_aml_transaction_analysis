@@ -20,6 +20,9 @@ To mitigate this operational risk, I developed automation ready transaction moni
 
 ## Data Ingestion and Cloud Architecture (Prepare)
 * **Data Sourcing:** I downloaded the raw transactional dataset from Kaggle to serve as the baseline simulation database.
-* **Data Preparation:** Unzipped .csv file, uploaded to Google Cloud folder, and loaded the dataset into BigQuery (SQL). File too large to load into BigQuery with standard upload, and would not load as a .zip, so used Google Cloud as a workaround. Formatted Schema to skip header row. Saved table to query. 
-* 
-* 
+* **Data Preparation:** Unzipped .csv file, uploaded to Google Cloud folder, and loaded the dataset into BigQuery (SQL). File too large to load into BigQuery with standard upload, and would not load as a .zip, so used Google Cloud as a workaround. Formatted Schema to skip header row and saved table to query. 
+* **Data Cleaning and Validation in SQL:** [Query 1 + 2: Cleaning](Queries/data_cleaning_and_preparation) - check for NULL values and duplicate entries in the dataset.
+
+## Structuring Analysis
+
+
