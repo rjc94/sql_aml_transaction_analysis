@@ -7,7 +7,7 @@ This project is the Capstone project for my Google Data Analytics Certificate co
 * **Data Source:** [Anti Money Laundering Transaction Data](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml?resource=download)
 ***
 
-## 🎯 Problem Statement & Business Objective
+## Problem Statement & Business Objective
 Financial institutions process millions of daily transactions, making manual oversight of financial crime impossible. Unchecked illicit activity leads to severe regulatory penalties, operational inefficiencies, and financial loss. 
 
 To mitigate this operational risk, I developed automation ready transaction monitoring solutions using SQL and cloud infrastructure to detect three critical indicators of money laundering and fraud:
