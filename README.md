@@ -7,7 +7,7 @@ This project is the Capstone project for my Google Data Analytics Certificate co
 * **Data Source:** [Anti Money Laundering Transaction Data](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml?resource=download)
 ***
 
-## Problem Statement & Business Objective (Ask Phase)
+## Problem Statement & Business Objective
 Financial institutions process millions of daily transactions, making manual oversight of financial crime impossible. Unchecked illicit activity leads to severe regulatory penalties, operational inefficiencies, and financial loss. 
 
 To mitigate this operational risk, I developed automation ready transaction monitoring solutions using SQL and Tableau to detect three critical indicators of money laundering and fraud and display these findings:
@@ -18,11 +18,20 @@ To mitigate this operational risk, I developed automation ready transaction moni
 **The Business Value:** This project bridges technical data analysis with financial operational compliance. I transformed raw ledger data into prioritized, actionable alerts for back-office investigative teams.
 ***
 
-## Data Ingestion and Cloud Architecture (Prepare)
+## Data Ingestion and Cloud Architecture
 * **Data Sourcing:** I downloaded the raw transactional dataset from Kaggle to serve as the baseline simulation database.
 * **Data Preparation:** Unzipped .csv file, uploaded to Google Cloud folder, and loaded the dataset into BigQuery (SQL). File too large to load into BigQuery with standard upload, and would not load as a .zip, so used Google Cloud as a workaround. Formatted Schema to skip header row and saved table to query. 
 * **Data Cleaning and Validation in SQL:** [Query 1 + 2: Cleaning](Queries/data_cleaning_and_preparation.sql) - check for NULL values and duplicate entries in the dataset.
+***
 
 ## Structuring Analysis
+* **SQL:** [Structuring Query](Queries/aml_structuring.sql)
+* **Logic** Queries for money transfers sent between $9,000 and $10,000 USD to flag attempts to evade the Federal reporting limits. Isolates Sender Accounts who sent 2 or more deposits within this threshold.
+
+## Rapid Velocity Analysis
+* **SQL:** [Rapid Velocity Query](Queries/rapid_velocity_query.sql)
+
+
+
 
 
