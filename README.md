@@ -5,6 +5,7 @@ This project demonstrates my ability to apply the full data analysis lifecycle t
 * **Core Skills:** Cloud Data Uploading, SQL Data Cleaning, Anomaly Detection, BI Dashboarding.
 * **Tech Stack:** Google BigQuery (SQL), Microsoft Excel, Tableau.
 * **Data Source:** [Anti Money Laundering Transaction Data](https://www.kaggle.com/datasets/berkanoztas/synthetic-transaction-monitoring-dataset-aml?resource=download)
+* **Visualizations:** [Tableau Dashboard](https://public.tableau.com/views/AML_Analysis/StructuredDeposits?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 ***
 
 ## Problem Statement & Business Objective
