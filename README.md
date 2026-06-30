@@ -8,18 +8,18 @@ This project is the Capstone project for my Google Data Analytics Certificate co
 ***
 
 ## Problem Statement & Business Objective
-Financial institutions process millions of daily transactions, making manual oversight of financial crime impossible. Unchecked illicit activity leads to severe regulatory penalties, operational inefficiencies, and financial loss. 
+Financial Institutions must monitor millions of transactions and flag illicit activity to avoid penalties, financial loss, and reputational damage. 
 
-To mitigate this operational risk, I developed automation ready transaction monitoring solutions using SQL and Tableau to detect three critical indicators of money laundering and fraud and display these findings:
+To mitigate this operational risk, I developed automation-ready transaction monitoring solutions using SQL and Tableau to detect three critical indicators of money laundering and fraud and display these findings:
 1. **Structuring (Smurfing):** Intentionally breaking large transactions into increments under $10,000 to evade CTR reporting thresholds.
 2. **Rapid Velocity:** High-frequency transfers indicating automated fraud or immediate layering of illicit funds.
 3. **Transaction Networks:** Interconnected webs of accounts routing funds through single nodes to hide source ownership.
 
-**The Business Value:** This project bridges technical data analysis with financial operational compliance. I transformed raw ledger data into prioritized, actionable alerts for back-office investigative teams.
+**The Business Value:** This project is comprised of both technical data analysis and financial operational compliance. I transformed raw ledger data into prioritized, actionable alerts for back-office investigative teams.
 ***
 
 ## Data Upload, Cloud Architecture, and Data Cleaning:
-* **Data Sourcing:** I downloaded the raw transactional dataset from Kaggle to serve as the baseline simulation database.
+* **Data Sourcing:** I downloaded the raw transactional dataset from Kaggle to serve as the simulated transaction dataset modeling real-world transactions and patterns.
 * **Data Preparation:** Unzipped .csv file, uploaded to Google Cloud folder, and loaded the dataset into BigQuery (SQL). File too large to load into BigQuery with standard upload, and would not load as a .zip, so used Google Cloud as a workaround. Formatted Schema to skip header row and saved table to query. 
 * **SQL:** [Data Cleaning and Validation Queries](Queries/data_cleaning_and_preparation.sql) - check for NULL values and duplicate entries in the dataset.
 * **Currency Conversion:** Amounts sent and received were listed under different currencies for this dataset. I ran this query in SQL to create a table with a new row for USD Received to ensure further queries could be compared with accuracy.
