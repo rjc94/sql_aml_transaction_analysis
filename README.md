@@ -46,9 +46,9 @@ To mitigate this operational risk, I developed automation-ready transaction moni
 ***
 ## Final Findings and Analysis: 
 * **Structuring:**
-* Detection Criteria: Flagged accounts that sent 2+ transfers between $9,000 - $9,999 in a single day.
-* Key Findings: $3,381,470,630 in total deposits flagged. Average transfer within this range was $9,492. Despite the large volume of transactions flagged only a small number were actual fraud occurences.
-* Recommendations: Need to layer on additional filtering criteria to further discern legitamate transactions by institutions vs. actual fraud behaviors. We could query for sender/receiver bank location, frequency of transfers daily, or even amend the 2+ transaction threshold. Trial and error will be needed to determine optimal screening criteria without allowing actual fraud occourences to slip through the cracks.
+    * *Detection Criteria:* Flagged accounts that sent 2+ transfers between $9,000 - $9,999 in a single day.
+    * *Key Findings:* $3,381,470,630 in total deposits flagged. Average transfer within this range was $9,492. Despite the large volume of transactions flagged only a small number were actual fraud occurences.
+    * *Recommendations:* Need to layer on additional filtering criteria to further discern legitamate transactions by institutions vs. actual fraud behaviors. We could query for sender/receiver bank location, frequency of transfers daily, or even amend the 2+ transaction threshold. Trial and error will be needed to determine optimal screening criteria without allowing actual fraud occourences to slip through the cracks.
 
 * **Rapid Velocity:**
 
