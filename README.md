@@ -42,7 +42,7 @@ To mitigate this operational risk, I developed automation-ready transaction moni
 ***
 
 ## Dashboard View
-* **Dashboard** [Tableau Dashboard}(https://public.tableau.com/views/AML_Analysis/StructuredDeposits?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+* **Dashboard** [Tableau Dashboard](https://public.tableau.com/views/AML_Analysis/StructuredDeposits?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 * 
 ***
 ## Final Findings and Analysis: 
