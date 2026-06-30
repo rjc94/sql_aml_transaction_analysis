@@ -42,9 +42,6 @@ To mitigate this operational risk, I developed automation-ready transaction moni
 * **Logic:** Flags accounts receiving deposits from 3 or more different sources in a day. Flags recipients for review as potential shell accounts.
 ***
 
-## Dashboard View
-* **Dashboard:** [Tableau Dashboard](https://public.tableau.com/views/AML_Analysis/StructuredDeposits?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-***
 ## Final Findings and Analysis: 
 * **Structuring:**
     * *Detection Criteria:* Flagged accounts that sent 2+ transfers between $9,000 - $9,999 in a single day.
