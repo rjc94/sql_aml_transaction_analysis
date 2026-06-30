@@ -51,7 +51,9 @@ To mitigate this operational risk, I developed automation-ready transaction moni
     * *Recommendations:* Need to layer on additional filtering criteria to further discern legitamate transactions by institutions vs. actual fraud behaviors. We could query for sender/receiver bank location, frequency of transfers daily, or even amend the 2+ transaction threshold. Trial and error will be needed to determine optimal screening criteria without allowing actual fraud occourences to slip through the cracks.
 
 * **Rapid Velocity:**
-
+    * *Detection Criteria:* Flagged accounts that sent 10+ transfers daily to review for high velocity money movement.
+    * *Key Findings:* $50,842,544,574 in total transactions flagged. Confirmed the average number of transactions for this group was 25.07 with the average transactions of a confirmed fraudster at 79.62. Alert precision only 0.008% but changing parameters to screen for a larger number of transactions per day allows multiple confirmed fraud cases to go undetected.
+    * *Recommendations:* 
 
 
 
