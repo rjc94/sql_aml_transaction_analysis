@@ -1,6 +1,6 @@
 # Financial Crime Analytics: AML Transaction Monitoring
 ## Project Overview
-This project is the Capstone project for my Google Data Analytics Certificate course. It demonstrates my ability to apply the full data analysis lifecycle to address complex operational risks for fintechs and financial institutions.
+This project demonstrates my ability to apply the full data analysis lifecycle to address complex operational risks for fintechs and financial institutions.
 * **Objective:** Build transaction monitoring solutions to detect common risk indicators.
 * **Core Skills:** Cloud Data Uploading, SQL Data Cleaning, Anomaly Detection, BI Dashboarding.
 * **Tech Stack:** Google BigQuery (SQL), Microsoft Excel, Tableau.
@@ -53,7 +53,13 @@ To mitigate this operational risk, I developed automation-ready transaction moni
 * **Rapid Velocity:**
     * *Detection Criteria:* Flagged accounts that sent 10+ transfers daily to review for high velocity money movement.
     * *Key Findings:* $50,842,544,574 in total transactions flagged. Confirmed the average number of transactions for this group was 25.07 with the average transactions of a confirmed fraudster at 79.62. Alert precision only 0.008% but changing parameters to screen for a larger number of transactions per day allows multiple confirmed fraud cases to go undetected.
-    * *Recommendations:* 
+    * *Recommendations:* Additional criteria are needed to filter out false positives and reduce alert fatigue. This query could be paired with other factors to further narrow the scope of the flagged transactions.
+ 
+* **Transaction Networks:**
+    * *Detection Criteria:* Flagged accounts that received deposits from 3 or more different sources in a single day as potential Shell Accounts worth investigating further. Also ran query to determine the optimal threshold for number of deposits received (5, 10, and 20) and resulting flagged accounts vs. confirmed fraudsters detected. 
+    * *Key Findings:* Targeting 5+ deposits received provides a very large number of 'false positives' but also captures the most confirmed fraud occurences (157). Raising this threshold to 10+ does very little to reduce false positives but negatively impacts the number of confirmed fraud that was flagged. The largest single recipient received $4,754,757 in deposits from 22 different sources.
+    * *Recommendations:* Keep threshold at 5+ for number of deposits received to prevent confirmed fraud cases from slipping through the cracks. Different criteria must be used to filter futher when attempting to reduce false positives. Simply raising the threshold of deposits received is not plausable because of the number of confirmed fraud instances this would allow to go undetected.
+
 
 
 
