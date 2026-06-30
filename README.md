@@ -13,7 +13,7 @@ Financial Institutions must monitor millions of transactions and flag illicit ac
 
 To mitigate this operational risk, I developed automation-ready transaction monitoring solutions using SQL and Tableau to detect three critical indicators of money laundering and fraud and display these findings:
 1. **Structuring (Smurfing):** Intentionally breaking large transactions into increments under $10,000 to evade CTR reporting thresholds.
-2. **Rapid Velocity:** High-frequency transfers indicating automated fraud or immediate layering of illicit funds.
+2. **Rapid Velocity:** High-frequency transfers can indicate automated fraud, account takeover, or immediate layering of illicit funds.
 3. **Transaction Networks:** Interconnected webs of accounts routing funds through single nodes to hide source ownership.
 
 **The Business Value:** This project is comprised of both technical data analysis and financial operational compliance. I transformed raw ledger data into prioritized, actionable alerts for back-office investigative teams.
